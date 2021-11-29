@@ -1,0 +1,669 @@
+@charset 'utf-8';
+/*
+  Theme Name:   Healthandcare
+  Theme URI:    http://healthandcare.ancorathemes.com/
+  Description:  Healthandcare - Multipurpose and Multiskin Responsive Wordpress theme
+  Author:       Ancorathemes
+  Author URI:   http://ancorathemes.com/
+  Template:     healthandcare
+  Version:      1.2
+  Tags: light, responsive-layout, flexible-header, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, full-width-template, microformats, post-formats, theme-options, threaded-comments, translation-ready
+  Text Domain:  healthandcare
+*/
+
+
+@import url("../healthandcare/style.css");
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Arial Narrow", Arial, sans-serif !important;
+}
+
+p, ul > li, ol > li, dl > dd {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.scheme_original_copy .menu_main_responsive li, .scheme_original_copy .menu_main_responsive a{
+	font-size: 14px;
+}
+
+/* COLORS */
+
+.teal { color: #155F83; }
+
+.white-text{color: #ffffff !important}
+
+.grayBackground { background: #e8e8e8; }
+
+/* HEADER FIXES */
+
+.column-2_4.contact_logo {
+  width: 40%;
+}
+
+.column-2_4.menu_main_wrap {
+  width: 60%;
+}
+
+.responsive_menu .top_panel_style_4 .contact_logo {
+  width: 90% !important;
+}
+
+.responsive_menu .menu_main_responsive_button {
+  margin-right: 2em;
+}
+
+.colored_line_color1 {
+  background-color: #155F83 !important;
+}
+
+.colored_line_color2 {
+  background-color: #5B8FA8 !important;
+}
+
+.colored_line_color3 {
+  background-color: #78b4c8 !important;
+}
+
+.colored_line_color4 {
+  background-color: #96d2e6 !important;
+}
+
+.top_panel_middle .logo {
+  margin-top: 0.5em !important;
+  margin-bottom: 0 !important;
+}
+
+.top_panel_middle .logo a img {
+  height: auto !important;
+}
+
+.logo .logo_slogan {
+  font-size: 17px;
+  color: #9B9CAB !important;
+}
+
+/* SLIDER TEXT BOX */
+
+#rev_slider_1_1_forcefullwidth {
+  margin-bottom: 60px !important;
+}
+
+.sliderText {
+  padding: 30px;
+	opacity: 0.6;
+  background: url('/wp-content/uploads/2020/06/blue-e1593200325220.png') repeat;
+	
+}
+
+.sliderText h2 {
+  color: #ffffff !important;
+  line-height: 1.3em !important;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.tp-title-wrap {
+  line-height: 55px !important;
+}
+
+/* NAVIGATION FIXES */
+
+.menu_main_nav > li > ul {
+  top: 4.74615rem;
+  width: 360px;
+  z-index: 99999;
+}
+
+.menu_main_nav > li > a {
+  font-size: 1.35rem;
+  line-height: 1rem !important;
+  text-transform: uppercase;
+}
+
+.scheme_btg_colors .menu_main_nav > li ul li a {
+  font-size: 1.35rem !important;
+  line-height: 1.5rem !important;
+}
+
+.top_panel_fixed .top_panel_wrap .logo {
+  margin: 0.5em auto 0 !important;
+}
+
+.scheme_btg_colors .menu_main_nav>li ul li a {
+  font-size: 20px;
+}
+
+/* PAGE FIXES */
+
+.body_style_fullwide .content_wrap {
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+}
+.row, .columns_wrap {
+  margin-right: -25px !important;
+}
+
+.page_content_wrap {
+  padding: 0 0 4em !important;
+}
+
+.page_content_wrap .content_wrap {
+  padding: 15px 0 0 !important;
+}
+
+.home .page_content_wrap .content_wrap {
+  padding-top: 0 !important;
+  margin-top: -25px;
+}
+
+.page_content_wrap .content_wrap .content {
+  padding: 0 !important;
+}
+
+.single .page_content_wrap .content_wrap {
+  padding: 15px 8% 0 !important;
+}
+
+.sc_content.content_wrap {
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+}
+
+.full_box_green {
+  width: 100%;
+  float: none;
+  clear: both;
+  margin: 0 auto;
+  padding: 20px 0 30px 0;
+  background: #155F83;
+}
+
+.full_box_green h2, .full_box_green h3, .full_box_green a {
+  color: #5B8FA8 !important;
+  margin: 5px auto;
+}
+
+.full_box_green a:hover {
+  color: #800000 !important;
+}
+
+.full_box_green p {
+  color: #FFFFFF;
+  margin: 5px auto;
+}
+
+figure {
+  max-width: 47%;
+}
+
+figure.alignleft {
+  margin-top: 8px;
+  margin-right: 1.5em;
+}
+
+figure.alignright {
+  margin-top: 8px;
+  margin-left: 1.5em;
+}
+
+/* POST ITEM FIXES */
+
+.page-template-blog-php .post_content, .page-template-blog-team-php .post_content {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.search .page_content_wrap {
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+}
+
+/* SEARCH FIXES */
+
+.top_panel_middle .menu_main_wrap {
+  padding-right: 0 !important;
+}
+
+.top_panel_icon {
+  margin: 0.45em 0 0 0 !important;
+}
+
+.search_wrap.search_state_closed {
+  position: relative;
+}
+
+.search_wrap.search_state_opened {
+  margin-right: 25% !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.search_form_wrap {
+  display: block;
+  background: #FFFFFF;
+  position: absolute;
+}
+
+.search_wrap.search_state_opened .search_field {
+  width: 175px !important;
+}
+
+.menu_show .top_panel_middle .search_wrap {
+  background: #FFFFFF !important;
+  display: block;
+  z-index: 999;
+}
+
+/* CONTENT FIXES */
+
+h1, h2, h3, h4, h5 {
+  text-transform: none;
+}
+
+h2 {
+  color: #155F83 !important;
+}
+
+p.large {
+  font-size: 24px;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+sup {
+  font-size: 55% !important;
+  line-height: 1em !important;
+}
+
+.infoTitle {
+  color: #155F83 !important;
+  margin: 0 auto;
+  margin-left: 10%;
+  padding: 0;
+}
+
+.sc_button {
+  background: #800000 !important;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.sc_button_iconed.sc_button.sc_button_size_large {
+  font-size: 1.5rem;
+}
+
+.scheme_btg_colors .sc_button.sc_button_style_filled:hover {
+  background: #8F989D !important;
+}
+
+.sc_button.aligncenter {
+  width: 250px;
+}
+
+ol.references > li {
+  font-size: 14px;
+  line-height: 1em;
+  margin: 0 auto;
+  padding: 0 0 15px 0;
+}
+
+/* MANY FACTORS TOOL */
+
+#factorsBox {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  float: none;
+  clear: both;
+  justify-content: center;
+  align-items: center;
+}
+
+.factors {
+  position: relative;
+  float: left;
+  background: url("http://bridgingthegapdiabetes.org/wp-content/uploads/2018/06/many-factors.png") no-repeat center center;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.factorsInfo {
+  padding-top: 12%;
+}
+
+.factorsFood, .factorsHouse, .factorsMoney, .factorsBlood, .factorsBus, .factorsCompass, .factorsBook {
+  display: none;
+}
+
+.factorsFood ul, .factorsHouse ul, .factorsMoney ul, .factorsBlood ul, .factorsBus ul, .factorsCompass ul, .factorsBook ul {
+  display: inline-block;
+}
+
+.factorsFood ul li, .factorsHouse ul li, .factorsMoney ul li, .factorsBlood ul li, .factorsBus ul li, .factorsCompass ul li, .factorsBook ul li {
+  margin-bottom: 0;
+}
+
+.factorIcons {
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+  cursor: pointer;
+}
+
+.factorIcons.food {
+  top: 70px;
+  left: 230px;
+}
+
+.factorIcons.blood {
+  top: 130px;
+  left: 375px;
+}
+
+.factorIcons.house {
+  top: 270px;
+  left: 430px;
+}
+
+.factorIcons.book {
+  top: 390px;
+  left: 320px;
+}
+
+.factorIcons.compass {
+  top: 390px;
+  left: 155px;
+}
+
+.factorIcons.bus {
+  top: 280px;
+  left: 50px;
+}
+
+.factorIcons.money {
+  top: 130px;
+  left: 90px;
+}
+
+/* PARTNER LIST */
+
+.partnerList {
+  margin: 0 0 0 20px;
+  padding: 0 0 0 50px;
+  border-left: 1px solid #155F83;
+}
+
+.partnerList h3 {
+  color: #37424a !important;
+  margin: 0 auto;
+}
+
+/* NPO BIOS */
+
+.bios {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.bios .sc_column_item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bios img {
+  width: 100%;
+  float: none;
+  margin: 0 auto;
+  padding: 0 0 5px 0;
+}
+
+.bios h3 {
+  font-size: 18px;
+  font-style: normal;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.bios p {
+  font-size: 16px;
+  line-height: 1.2em;
+  text-align: center;
+  font-style: oblique;
+  margin: 0 auto 20px auto;
+  padding: 0;
+}
+
+/* RESOURCES */
+
+.resources h4 {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* FOOTER FIXES */
+
+.copyright_wrap_inner .left_footer {
+  float: left;
+}
+.copyright_wrap_inner .center_footer {
+  text-align: center;
+  float: center;
+}
+
+.copyright_wrap_inner .right_footer {
+  text-align: right;
+  float: right;
+}
+
+.copyright_wrap p {
+  font-size: 12px;
+}
+@media (min-width: 769px) {
+  #accordionFactors { display: none; }
+  #accordionMap{display: none;}
+}
+@media (max-width: 768px){
+  #factorsBox { display: none; }
+        .map{display:none;}
+  .sc_accordion.sc_accordion_style_1 { margin-bottom: 100px; }
+  .sc_accordion.sc_accordion_style_1 p { font-size: 17px; line-height: normal; }
+  .sc_accordion.sc_accordion_style_1 ul li {
+    font-size: 17px;
+      line-height: normal;
+      margin-bottom: auto;
+  }
+  .scheme_btg_colors .sc_accordion.sc_accordion_style_1 .sc_accordion_item .sc_accordion_title { font-size: 22px; }
+}
+@media screen and (max-width: 640px) {
+  .logo .logo_slogan {
+    font-size: 15px;
+    color: #9B9CAB !important;
+  }
+    
+  .copyright_wrap_inner .left_footer {
+    float: none;
+    margin-bottom: 20px;
+  }
+  
+  .copyright_wrap_inner .right_footer {
+    text-align: center;
+    float: none;
+  }
+	
+	.menu_main_responsive li{
+		font-size: 12px !important;
+	}
+}
+
+/* SPACERS */
+
+.vertical-align-text {
+  padding: 15% 0;
+}
+
+.spacer10 {
+  width: 100%;
+  height: 10px;
+  float: none;
+  clear: both;
+}
+
+.spacer20 {
+  width: 100%;
+  height: 20px;
+  float: none;
+  clear: both;
+}
+
+.spacer30 {
+  width: 100%;
+  height: 30px;
+  float: none;
+  clear: both;
+}
+
+.spacer40 {
+  width: 100%;
+  height: 40px;
+  float: none;
+  clear: both;
+}
+
+.spacer50 {
+  width: 100%;
+  height: 50px;
+  float: none;
+  clear: both;
+}
+
+/*****Partners Page******/
+.st0{
+  fill-rule:evenodd;
+  clip-rule:evenodd;
+  fill:#DADADE;
+}
+.st1{fill:#800000;}
+.st1:hover{
+  fill: #F68D2E !important;
+  cursor: pointer;
+}
+.active-state{fill: #5B8FA8;}
+.active-state:hover {
+  /*fill: #155F83 !important;*/
+    cursor: pointer;
+}
+#info-box {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: #ffffff;
+    border: 2px solid #800000;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+/* INFOGRAPHIC DIABETES http://bridgingthegapdiabetes.org/wp-content/uploads/2018/05/infographic-base.png #infographic_diabetes .progress {
+  background: url("http://bridgingthegapdiabetes.org/wp-content/uploads/2018/05/infographic-more.png") no-repeat center center;*/
+
+#infographic_diabetes {
+  background: url("http://bridgingthegapdiabetes.org/wp-content/uploads/2018/05/infographic-base.png") no-repeat center center;
+  position: relative;
+  display: block;
+  width: 471px;
+  height: 161px;
+  margin: 0 auto;
+  margin-left: 15%;
+  padding: 0;
+  overflow: hidden;
+}
+#infographic_diabetes img {
+  width: 100%;
+}
+#infographic_diabetes .progress {
+  background: url("http://bridgingthegapdiabetes.org/wp-content/uploads/2018/05/infographic-more.png") no-repeat center center;
+  position: absolute;
+  max-width: 471px;
+  width: 100%;
+  max-height: 161px;
+  height: 100%;
+  top: 300px;
+  left: 0;
+  z-index: 1;
+}
+#infographic_diabetes .numbers_low, #infographic_diabetes .numbers_high {
+  position: absolute;
+  display: block;
+  bottom: 5px;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+}
+#infographic_diabetes .numbers_low {
+  background: url("http://bridgingthegapdiabetes.org/wp-content/uploads/2018/05/infographic-30.png") no-repeat center center;
+  max-width: 158px;
+  width: 100%;
+  max-height: 96px;
+  height: 100%;
+  left: 0;
+
+}
+#infographic_diabetes .numbers_high {
+  background: url("http://bridgingthegapdiabetes.org/wp-content/uploads/2018/05/infographic-55.png") no-repeat center center;
+  max-width: 165px;
+  width: 100%;
+  max-height: 139px;
+  height: 100%;
+  left: 63%;
+
+}
+
+/*******IE******************************/
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+   svg{
+          padding-bottom: 65%;
+    height: 1px; overflow: visible
+    }
+}
+
+.sc_list .sc_list_item {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+input[type=text], input[type=number], input[type=email], input[type=search], input[type=password], textarea, select {
+    border: 1px solid #afafaf;
+}
+
+.post_info_posted_by {
+    display: none;
+}
+
+.post_author {
+    display: none;
+}
+
+.sc_section_inner {
+    width: 100%;
+}
+
+.top_panel_title_inner {
+    background-color: #155F83 !important;
+}
